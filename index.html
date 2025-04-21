@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalan Interiorismo</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -13,23 +16,89 @@
                 <img src="images/main-logo.png" alt="Catalan interiorismo logo">
             </a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="/">Inicio</a></li>
-                <li class="dropdown">
-                <li><a href="/productos">Productos</a>
-                <ul class="dropdown-content">
-                    <li><a href="/productos/muebles">Muebles</a></li>
-                    <li><a href="/productos/decoracion">Decoración</a></li>
-                    <li><a href="/productos/textiles">Textiles</a></li>
-                    <li><a href="/productos/iluminacion">Iluminación</a></li>
-                    </ul>
+            <nav>
+                <ul>
+                    <li><a href="/">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="/productos">Productos</a>
+                        <ul class="dropdown-content">
+                            <li><a href="/productos/persianas">Persianas</a>
+                                <ul>
+                                    <li><a href="/productos/persianas/horizontales">Horizontales</a></li>
+                                    <li><a href="/productos/persianas/enrollables">Enrollables</a></li>
+                                    <li><a href="/productos/persianas/sheer-elegance">Sheer Elegance</a></li>
+                                    <li><a href="/productos/persianas/verticales-pvc">Verticales de PVC</a></li>
+                                    <li><a href="/productos/persianas/romana">Romana</a></li>
+                                    <li><a href="/productos/persianas/shangri-la">Shangri-la</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/productos/cortinas">Cortinas</a>
+                                <ul>
+                                    <li><a href="/productos/cortinas/tradicional">Tradicional</a></li>
+                                    <li><a href="/productos/cortinas/blackout">Blackout</a></li>
+                                    <li><a href="/productos/cortinas/antibacterial">Antibacterial</a></li>
+                                    <li><a href="/productos/cortinas/tergales">Tergales</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/productos/alfombras">Alfombras</a>
+                                <ul>
+                                    <li><a href="/productos/alfombras/trafico-pesado">Tráfico pesado</a></li>
+                                    <li><a href="/productos/alfombras/residencial">Residencial</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/productos/exteriores">Exteriores</a>
+                                <ul>
+                                    <li><a href="/productos/exteriores/follaje-artificial">Follaje artificial</a></li>
+                                    <li><a href="/productos/exteriores/toldos">Toldos</a></li>
+                                    <li><a href="/productos/exteriores/pintura">Pintura</a></li>
+                                    <li><a href="/productos/exteriores/aluminio-ventanas">Aluminio para ventanas</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/productos/interiores">Interiores</a>
+                                <ul>
+                                    <li><a href="/productos/interiores/papel-tapiz">Papel tapiz</a></li>
+                                    <li><a href="/productos/interiores/tapizado">Tapizado</a></li>
+                                    <li><a href="/productos/interiores/pintura">Pintura</a></li>
+                                    <li><a href="/productos/interiores/tabla-roca">Tabla roca</a></li>
+                                    <li><a href="/productos/interiores/empastado">Empastado</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </li>
-                <li><a href="/quienes-somos">Quiénes Somos</a></li>
-                <li><a href="/contacto">Contacto</a></li>
-            </ul>
-        </nav>
+                    <li><a href="/quienes-somos">Quiénes Somos</a></li>
+                    <li><a href="/contacto">Contacto</a></li>
+                </ul>
+            </nav>
+
     </header>
+    <a href="https://wa.me/529932815878" class="whatsapp-button">
+        <img src="images/whatsapp.png" alt="WhatsApp">
+    </a>
+
+    <section class="hero">
+        <div class="hero-carousel">
+            <div class="slide">
+                <img src="images/hero-image.jpeg" alt="Espacio de interiorismo inspirador">
+            </div>
+            <div class="slide">
+                <img src="images/hero-slide2.jpeg" alt="Espacio de interiorismo inspirador">
+            </div>
+            <div class="slide">
+                <img src="images/hero-slide3.jpeg" alt="Toldo en exteriores">
+            </div>
+            <div class="carousel-indicators">
+                <button class="indicator active"></button>
+                <button class="indicator"></button>
+                <button class="indicator"></button>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1>Decorando tus espacios...</h1>
+            <p>Creamos espacios únicos y funcionales, reflejando tu estilo y personalidad.</p>
+            <a href="/proyectos" class="button">Ver Nuestros Proyectos</a>
+        </div>
+    </section>
+
     
 </body>
 </html>
