@@ -6,22 +6,23 @@
     <title>Cortinas Blackout - Catalan Interiorismo</title> 
     <link rel="stylesheet" href="/style.css"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     
-    <header>
+    <header id="site-header">  
         <div class="logo">
             <a href="/">
                 <img src="/images/main-logo.png" alt="Catalan interiorismo logo">
             </a>
         </div>
-        <nav>
+        <nav id="main-nav"> 
             <ul>
                 <li><a href="/">Inicio</a></li>
                 <li class="dropdown">
-                    <a href="/productos.html" class="active">Productos</a> 
+                    <a href="/productos.html">Productos</a> 
                     <ul class="dropdown-content">
                         <li><a href="/productos/persianas.html">Persianas</a>
                             <ul>
@@ -69,9 +70,18 @@
                 </li>
                 <li><a href="/quienes-somos.html">Quiénes Somos</a></li> 
                 <li><a href="/contacto.html">Contacto</a></li>
+                <li class="call-button-li"> 
+                    <a href="tel:+529932815878" class="call-button">Llámanos</a> 
+                </li>
             </ul>
-            <a href="tel:+529932815878" class="call-button">Llámanos</a>
         </nav>
+        <button id="mobile-menu-toggle" aria-label="Toggle Navigation" aria-expanded="false">
+             <span class="hamburger-icon">
+                 <span></span> 
+                 <span></span> 
+                 <span></span> 
+             </span>
+        </button>
     </header>
 
     <main class="product-detail-page"> 
@@ -96,12 +106,12 @@
          <section class="product-display" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; padding: 20px 5%; max-width: 1200px; margin: 20px auto;">
             
              <div class="product-image-gallery">
-                 <img id="mainProductImage" src="/images/cortina-blackout-destacada.jpg" alt="Cortina Blackout en dormitorio oscuro" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 15px; display: block;">
+                 <img id="mainProductImage" src="/images/hero-slide2.jpeg" alt="Cortina Blackout en dormitorio oscuro" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 15px; display: block;">
                  
                  <div class="product-thumbnails" style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
-                     <img src="/images/cortina-blackout-destacada.jpg" alt="Vista 1 Cortina Blackout" onclick="changeMainImage(this.src)" style="width: 80px; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer; border: 1px solid #ddd;">
-                     <img src="/images/cortina-blackout-detalle-2.jpg" alt="Detalle tejido Cortina Blackout" onclick="changeMainImage(this.src)" style="width: 80px; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer; border: 1px solid #ddd;">
-                     <img src="/images/cortina-blackout-detalle-3.jpg" alt="Mecanismo Cortina Blackout" onclick="changeMainImage(this.src)" style="width: 80px; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer; border: 1px solid #ddd;">
+                     <img src="/images/cortina-tergal-detalle-2.jpg" alt="Vista 1 Cortina Blackout" onclick="changeMainImage(this.src)" style="width: 80px; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer; border: 1px solid #ddd;">
+                     <img src="/images/hero-slide2.jpeg" alt="Detalle tejido Cortina Blackout" onclick="changeMainImage(this.src)" style="width: 80px; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer; border: 1px solid #ddd;">
+                     <img src="/images/cortina-blackout-detalle-4.jpg" alt="Mecanismo Cortina Blackout" onclick="changeMainImage(this.src)" style="width: 80px; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer; border: 1px solid #ddd;">
                  </div>
              </div>
 
@@ -185,6 +195,7 @@
             }
         }
     </script>
+    <script src="/script.js"></script>
     
 </body>
 </html>

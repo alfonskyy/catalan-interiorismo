@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos de Interior - Catalan Interiorismo</title> 
+    <title>Productos de Interiores - Catalan Interiorismo</title> 
     <link rel="stylesheet" href="/style.css"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <header>
+    <header id="site-header">  
         <div class="logo">
             <a href="/">
                 <img src="/images/main-logo.png" alt="Catalan interiorismo logo">
             </a>
         </div>
-        <nav>
+        <nav id="main-nav"> 
             <ul>
                 <li><a href="/">Inicio</a></li>
                 <li class="dropdown">
-                    <a href="/productos.html">Productos</a> <ul class="dropdown-content">
+                    <a href="/productos.html">Productos</a> 
+                    <ul class="dropdown-content">
                         <li><a href="/productos/persianas.html">Persianas</a>
                             <ul>
                                 <li><a href="/productos/persianas/horizontales.html">Horizontales</a></li>
@@ -54,7 +55,8 @@
                                 <li><a href="/productos/exteriores/aluminio-ventanas.html">Aluminio para ventanas</a></li>
                             </ul>
                         </li>
-                        <li><a href="/productos/interiores.html">Interiores</a> <ul>
+                        <li><a href="/productos/interiores.html">Interiores</a> 
+                            <ul>
                                 <li><a href="/productos/interiores/papel-tapiz.html">Papel tapiz</a></li>
                                 <li><a href="/productos/interiores/tapizado.html">Tapizado de mobiliario</a></li>
                                 <li><a href="/productos/interiores/pintura.html">Pintura</a></li>
@@ -65,20 +67,30 @@
                         </li>
                     </ul>
                 </li>
-                <li><a href="/quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="/quienes-somos.html">Quiénes Somos</a></li> 
                 <li><a href="/contacto.html">Contacto</a></li>
+                <li class="call-button-li"> 
+                    <a href="tel:+529932815878" class="call-button">Llámanos</a> 
+                </li>
             </ul>
-            <a href="tel:+529932815878" class="call-button">Llámanos</a>
         </nav>
+        <button id="mobile-menu-toggle" aria-label="Toggle Navigation" aria-expanded="false">
+             <span class="hamburger-icon">
+                 <span></span> 
+                 <span></span> 
+                 <span></span> 
+             </span>
+        </button>
     </header>
+    
     <main class="subcategory-page"> 
         <section class="subcategory-hero"> 
-            <h1>Productos de Interior</h1>
+            <h1>Productos de Interiores</h1>
             <p>Transforma tus espacios interiores con nuestra gama de productos diseñados para aportar estilo, confort y personalidad.</p> 
         </section>
 
         <section class="subcategory-grid">
-            <h2>Tipos de Productos de Interior</h2>
+            <h2>Tipos de Productos de Interiores</h2>
             <div class="grid-container">
                 
                 <a href="/productos/interiores/papel-tapiz.html" class="grid-item">
@@ -159,5 +171,6 @@
             &copy; 2025 Catalan Interiorismo. Todos los derechos reservados. 
         </div>
     </footer>
+    <script src="/script.js"></script>
     </body>
 </html>
