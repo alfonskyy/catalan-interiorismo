@@ -143,3 +143,22 @@ if (videoContainers.length > 0) {
         }
     });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const videoContainers = document.querySelectorAll('.video-container');
+    
+    videoContainers.forEach(container => {
+        const video = container.querySelector('video');
+        
+        
+        container.style.minHeight = '300px';
+        
+        if (video) {
+            
+            video.addEventListener('loadedmetadata', () => {
+                const aspectRatio = video.videoHeight / video.videoWidth;
+                container.style.paddingTop = `${aspectRatio * 100}%`;
+            });
+        }
+    });
+});

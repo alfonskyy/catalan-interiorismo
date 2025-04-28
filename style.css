@@ -1093,9 +1093,10 @@ footer {
 .video-container {
     position: relative;
     width: 100%;
-    padding-top: 56.25%; 
     overflow: hidden;
     cursor: pointer;
+    background-color: #000;
+    min-height: 300px;
 }
 
 .video-container video {
@@ -1104,7 +1105,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .play-button {
@@ -1114,134 +1115,7 @@ footer {
     transform: translate(-50%, -50%);
     width: 60px;
     height: 60px;
-    background-color: rgba(111, 130, 150, 0.8);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease;
-}
 
-.play-button svg {
-    width: 30px;
-    height: 30px;
-    fill: white;
-}
-
-.video-container:hover .play-button {
-    background-color: #6f8296;
-    transform: translate(-50%, -50%) scale(1.1);
-}
-
-.project-info {
-    padding: 20px;
-}
-
-.project-info h3 {
-    font-size: 1.2em;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.project-info p {
-    font-size: 0.9em;
-    color: #666;
-    line-height: 1.5;
-}
-
-.cta-section {
-    background-color: #f9f9f9;
-    padding: 60px 20px;
-    margin-top: 60px;
-    text-align: center;
-}
-
-.cta-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.cta-content h2 {
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.cta-content p {
-    font-size: 1.1em;
-    color: #666;
-    margin-bottom: 30px;
-}
-
-.cta-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.button.secondary {
-    background-color: transparent;
-    border: 2px solid #6f8296;
-    color: #6f8296;
-}
-
-.button.secondary:hover {
-    background-color: #6f8296;
-    color: white;
 }
 
 
-@media (max-width: 768px) {
-    .gallery-container {
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    }
-    
-    .proyectos-hero {
-        padding: 40px 20px;
-    }
-    
-    .proyectos-hero h1 {
-        font-size: 2em;
-    }
-    
-    .cta-section {
-        padding: 40px 20px;
-    }
-}
-
-@media (max-width: 600px) {
-    .gallery-container {
-        grid-template-columns: 1fr;
-    }
-    
-    .filter-buttons {
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-    }
-    
-    .filter-btn {
-        width: 80%;
-    }
-    
-    .proyectos-hero h1 {
-        font-size: 1.8em;
-    }
-    
-    .proyectos-hero p {
-        font-size: 1em;
-    }
-    
-    .cta-content h2 {
-        font-size: 1.6em;
-    }
-    
-    .cta-content p {
-        font-size: 1em;
-    }
-}
-
-.hidden {
-    display: none;
-}
